@@ -1,0 +1,6 @@
+{
+  "name": "SamRemote",
+  "description": "Intuitive Smart Remote for Samsung TVs with tactile volume rocker, channel controls, and smart hub navigation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

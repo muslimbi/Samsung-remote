@@ -1,0 +1,31 @@
+package com.example.model
+
+data class TvState(
+    val isPoweredOn: Boolean = true,
+    val volume: Int = 25,
+    val isMuted: Boolean = false,
+    val currentChannelNumber: Int = 24,
+    val currentChannelName: String = "ESPN Live",
+    val currentShow: String = "Championship Finals 4K",
+    val previousChannelNumber: Int = 7,
+    val currentInputSource: String = "TV Antenna",
+    val connectedDevice: SamsungTVDevice? = null,
+    val connectionStatus: ConnectionStatus = ConnectionStatus.CONNECTED,
+    val controlMode: RemoteControlMode = RemoteControlMode.TACTILE_ROCKER,
+    val isHapticEnabled: Boolean = true,
+    val isSoundEnabled: Boolean = true,
+    val showVirtualTvScreen: Boolean = true,
+    val volumeOverlayVisible: Boolean = false,
+    val sleepTimerRemainingSeconds: Int? = null,
+    val sleepTimerInitialSeconds: Int? = null,
+    val isFavoriteSurfingOnly: Boolean = false,
+    val isVoiceListening: Boolean = false,
+    val voiceRecognizedText: String = "",
+    val voiceFeedbackMessage: String? = null,
+    val voiceRmsDb: Float = 0f,
+    val promptTvToConnect: SamsungTVDevice? = null,
+    val isNetworkScanning: Boolean = false,
+    val activeStreamingAppId: String? = null,
+    val lastActionTimestamp: Long = System.currentTimeMillis(),
+    val logMessages: List<String> = listOf("Ready. Tap buttons or rockers to control Samsung TV.")
+)
